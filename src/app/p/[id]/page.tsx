@@ -17,7 +17,7 @@ export default async function PastePage({
 
   const paste = JSON.parse(raw);
   const currentTime = now();
-  console.log("Current time:", currentTime);
+
 
 
   if (paste?.expires_at_ms && currentTime >= paste?.expires_at_ms) {
